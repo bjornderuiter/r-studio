@@ -10,7 +10,7 @@ class r_studio (
   file { "/tmp/rstudio-server-1.1.463-amd64.deb":
     owner   => root,
     group   => root,
-    mode    => 644,
+    mode    => "0644",
     ensure  => present,
     source  => "https://download2.rstudio.org/rstudio-server-1.1.463-amd64.deb"
   }
